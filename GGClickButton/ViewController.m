@@ -31,12 +31,23 @@
     
     
     
+    UIButton *tempBtn2 = [[UIButton alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.bounds) - 300 ) / 2, 200, 300, 44)];
+    [tempBtn2 setBackgroundColor:[UIColor cyanColor]];
+    [tempBtn2 setTitle:@"Click me again,Baby !" forState:UIControlStateNormal];
+    [tempBtn2 addTarget:self action:@selector(clickWithInterval2:) forControlEvents:UIControlEventTouchUpInside];
+    tempBtn2.uxy_acceptEventInterval = 2;
+    [self.view addSubview:tempBtn2];
 }
 
 
 
 - (void)clickWithInterval:(id)sender{
     NSLog(@"Why not");
+}
+
+- (void)clickWithInterval2:(id)sender{
+    NSLog(@"Why not again");
+
 }
 
 
