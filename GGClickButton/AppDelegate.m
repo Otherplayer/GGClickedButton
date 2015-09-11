@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UIControl+Categories.h"
 @interface AppDelegate ()
 
 @end

@@ -15,6 +15,7 @@
 		63485AF31BA2B9BB009EAE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63485AF11BA2B9BB009EAE90 /* LaunchScreen.storyboard */; };
 		63485AFE1BA2B9BB009EAE90 /* GGClickButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63485AFD1BA2B9BB009EAE90 /* GGClickButtonTests.m */; };
 		63485B091BA2B9BB009EAE90 /* GGClickButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63485B081BA2B9BB009EAE90 /* GGClickButtonUITests.m */; };
+		63485B1B1BA2BA88009EAE90 /* UIControl+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 63485B1A1BA2BA88009EAE90 /* UIControl+Categories.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		63485B041BA2B9BB009EAE90 /* GGClickButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGClickButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63485B081BA2B9BB009EAE90 /* GGClickButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGClickButtonUITests.m; sourceTree = "<group>"; };
 		63485B0A1BA2B9BB009EAE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63485B191BA2BA88009EAE90 /* UIControl+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Categories.h"; sourceTree = "<group>"; };
+		63485B1A1BA2BA88009EAE90 /* UIControl+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Categories.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		63485AE21BA2B9BB009EAE90 /* GGClickButton */ = {
 			isa = PBXGroup;
 			children = (
+				63485B1C1BA2C1FD009EAE90 /* Categories */,
 				63485AE61BA2B9BB009EAE90 /* AppDelegate.h */,
 				63485AE71BA2B9BB009EAE90 /* AppDelegate.m */,
 				63485AE91BA2B9BB009EAE90 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				63485B0A1BA2B9BB009EAE90 /* Info.plist */,
 			);
 			path = GGClickButtonUITests;
+			sourceTree = "<group>";
+		};
+		63485B1C1BA2C1FD009EAE90 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				63485B191BA2BA88009EAE90 /* UIControl+Categories.h */,
+				63485B1A1BA2BA88009EAE90 /* UIControl+Categories.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63485AEB1BA2B9BB009EAE90 /* ViewController.m in Sources */,
+				63485B1B1BA2BA88009EAE90 /* UIControl+Categories.m in Sources */,
 				63485AE81BA2B9BB009EAE90 /* AppDelegate.m in Sources */,
 				63485AE51BA2B9BB009EAE90 /* main.m in Sources */,
 			);
